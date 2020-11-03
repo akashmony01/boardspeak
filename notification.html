@@ -1,0 +1,865 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Notification</title>
+
+	<!-- including bootstrap css -->
+	<link rel="stylesheet" href="src/style/vendor/bootstrap.min.css">
+	<!-- including font awesome css -->
+	<link rel="stylesheet" href="src/style/vendor/font-awesome/fontawesome.min.css">
+
+	<!-- owl carousel styles -->
+	<link rel="stylesheet" href="src/style/vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="src/style/vendor/owl-carousel/owl.theme.default.min.css">
+	
+	<!-- including custom css -->
+	<link rel="stylesheet" href="src/style/main.css">
+	<link rel="stylesheet" href="src/style/notification.css">
+
+	<!-- including jquery -->
+	<script src="src/script/vendor/jquery.min.js"></script>
+	
+	<!-- including popper js -->
+	<script src="src/script/vendor/popper.min.js"></script>
+	<!-- including bootsrap js -->
+	<script src="src/script/vendor/bootstrap.min.js"></script>
+	
+	<!-- owl carousel js -->
+	<script src="src/script/vendor/owl.carousel.min.js"></script>
+
+	<!-- custom js -->
+	<script src="src/script/main.js"></script>
+	<script src="src/script/notification.js"></script>
+</head>
+<body>
+	<!-- preloader animation -->
+	<div class="loader">
+		<img src="src/image/loader.gif">
+	</div>
+	<!-- hedaer part start -->
+	<header id="header" class="header sticky-top">
+		<nav class="main_nav_container container">
+
+			<div class="mobile_icon" disabled>
+				<a id="mobile_menu_collase">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+
+			<div class="mobile_nav" id="mobile_nav">
+				<ul class="mobile_nav_container container">
+					<li class="search_box">
+						<input class="form-control" type="text" placeholder="Search">
+						<i class="fas fa-search"></i>
+					</li>
+					<li class="">
+						<a class="" href="#">
+							Find Groups
+						</a>
+					</li>
+					<li class="">
+						<a class="mobile_sub">
+							<i class="fas fa-user"></i>
+							<i class="fas fa-caret-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Help & Support
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Setting
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Addministrator
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Log Out
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<a class="logo_img" href="#">
+				<img class="img-fluid" src="src/image/logo.png" alt="">
+			</a>
+
+			<!-- only desktop nav -->
+			<div class="desk_nav">
+				<ul class="desk_nav_container">
+					<li class="only_desk_item search_box">
+						<input class="form-control" type="text" placeholder="Search">
+						<i class="fas fa-search"></i>
+					</li>
+					<li class="only_desk_item">
+						<a class="" href="#">
+							Find Groups
+						</a>
+					</li>
+					<li class="">
+						<a class="active sub_nav_container">
+							<span>Create Group</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Start a group
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Create a topic
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									a post
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="only_desk_item">
+						<a class="sub_nav_container">
+							<i class="fas fa-user-circle"></i>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Help & Support
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Setting
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Addministrator
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Log Out
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header><!-- /header -->
+
+	<!-- main content start here -->
+	<main id="main" class="main">
+
+		<section class="not_content">
+			<div class="not_content_container container-fluid">
+				<div class="row">
+					<div class="col-md-7 col-12 not_main_parrent">
+						<div class="not_main">
+
+							<h2 class="text-center pb-3">
+								Notification
+							</h2>
+
+							<div class="not_tab_button text-center">
+								<button id="setting_tab_btn" class="btn">
+									Settings
+								</button>
+								<button id="summary_tab_btn" class="btn active">
+									Summary
+								</button>
+							</div>
+
+							<div id="not_summary" class="not_summary">
+
+								<ul class="not_filter owl-theme owl-carousel">
+									<li>
+										<a class="not_filter_btn active" selected_tab_id="all_not" title="">
+											all
+										</a>
+									</li>
+									<li>
+										<a class="not_filter_btn" selected_tab_id="activity_not" title="">
+											activities
+										</a>
+									</li>
+									<li>
+										<a class="not_filter_btn" selected_tab_id="permission_not" title="">
+											permission
+										</a>
+									</li>
+									<li>
+										<a class="not_filter_btn" selected_tab_id="todos_not" title="">
+											to do's
+										</a>
+									</li>
+									<li>
+										<a class="not_filter_btn" selected_tab_id="reward_not" title="">
+											reward
+										</a>
+									</li>
+								</ul>
+
+								<div id="activity_not" class="not_tab activity_not">
+									<h4 class="activity_not_header">
+										Activity Feed
+									</h4>
+									<div class="activity_not_item">
+										<div class="not_info">
+											<div class="not_img_text">
+												<a href="" title="">
+													<img class="img-fluid" src="src/image/about_one.jpg" alt="not-img">
+												</a>
+												
+												<div class="not_text">
+													<a href="" class="author_name">
+														Mohammed Ali
+													</a>
+													<a href="" class="not_caption">
+														Accpeted your request to be direct contact.
+													</a>
+												</div>
+											</div>
+
+											<div class="text-center">
+												<p class="not_time">
+													10 min ago
+												</p>
+												<img class="badge_img" src="src/image/handshake.png" alt="">
+											</div>	
+										</div>
+									</div>
+									<div class="activity_not_item">
+										<div class="not_info">
+											<div class="not_img_text">
+												<a href="" title="">
+													<img class="img-fluid" src="src/image/about_one.jpg" alt="not-img">
+												</a>
+												
+												<div class="not_text">
+													<a href="" class="author_name">
+														Mohammed Ali
+													</a>
+													<a href="" class="not_caption">
+														Accpeted your request to be direct contact.
+													</a>
+												</div>
+											</div>
+											<div class="text-center">
+												<p class="not_time">
+													10 min ago
+												</p>
+												<span class="activities_drop_icon">
+													<i class="fas fa-chevron-right"></i>
+												</span>
+											</div>
+										</div>
+										<div class="not_attach">
+											<ul class="img_container">
+												<li>
+													<a href="" title="">
+														<img src="src/image/about_three.jpg" alt="">
+													</a>
+												</li>
+												<li>
+													<a href="" title="">
+														<img src="src/image/about_three.jpg" alt="">
+													</a>
+												</li>
+												<li>
+													<a href="" title="">
+														<img src="src/image/about_three.jpg" alt="">
+													</a>
+												</li>
+
+												<li>
+													<a href="" title="">
+														<span class="more_img">
+															+13
+														</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="activity_not_item">
+										<div class="not_info">
+											<div class="not_img_text">
+												<a href="" title="">
+													<img class="img-fluid" src="src/image/about_one.jpg" alt="not-img">
+												</a>
+												
+												<div class="not_text">
+													<a href="" class="author_name">
+														Mohammed Ali
+													</a>
+													<a href="" class="not_caption">
+														Liked your comment in your post
+													</a>
+													<a href="" class="not_ext_link">
+														"Fox News Today..."
+													</a>
+												</div>
+											</div>
+
+											<div class="text-center">
+												<p class="not_time">
+													10 min ago
+												</p>
+											</div>	
+										</div>
+										<div class="not_attach">
+											<ul class="img_container">
+												<li>
+													<a href="" title="">
+														<img src="src/image/about_three.jpg" alt="">
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="activity_not_item">
+										<div class="not_info">
+											<div class="not_img_text">
+												<a href="" title="">
+													<img class="img-fluid" src="src/image/about_one.jpg" alt="not-img">
+												</a>
+												
+												<div class="not_text">
+													<a href class="author_name">
+														Mohammed Ali
+													</a>
+													<a href="" class="not_caption">
+														There will be the a short description.
+													</a>
+												</div>
+											</div>
+
+											<p class="not_time">
+												10 min ago
+											</p>
+										</div>
+										<div class="not_attach">
+											<ul class="audio_container">
+												<li>
+													<audio controls>
+														<source src="src/file/bangladesh.mp3" type="audio/mpeg">
+														Your browser does not support the audio element.
+													</audio>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="activity_not_item">
+										<div class="not_info">
+											<div class="not_img_text">
+												<a href="" title="">
+													<img class="img-fluid" src="src/image/about_one.jpg" alt="not-img">
+												</a>
+												
+												<div class="not_text">
+													<a class="author_name">
+														Mohammed Ali
+													</a>
+													<a href="" class="not_caption">
+														There will be the a short description.
+													</a>
+												</div>
+											</div>
+
+											<p class="not_time">
+												10 min ago
+											</p>
+										</div>
+										<div class="not_attach">
+											<ul class="file_container">
+												<li>
+													<a class="" href="" title="">
+														<img src="src/image/ps.png" alt="">
+														<p class="file_info">
+															<span class="file_name">
+																final.psd
+															</span>
+															<span class="file_size">
+																32 MB
+															</span>
+														</p>
+													</a>
+												</li>
+												<li>
+													<a class="" href="" title="">
+														<img src="src/image/sketch.png" alt="">
+														<p class="file_info">
+															<span class="file_name">
+																final.skecth
+															</span>
+															<span class="file_size">
+																105 MB
+															</span>
+														</p>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div id="permission_not" class="not_tab permission_not">
+									
+
+									<h4 class="permission_header">
+										Pending Permissions & Invites
+									</h4>
+									<div class="permission_container">
+										
+										<div class="permission_item">
+											<div class="permission_img">
+												<img src="src/image/add_two.jpg" alt="">
+											</div>
+											
+											<div class="permission_text">
+												<h4>
+													<span>
+														jhon abraham
+													</span>
+													permssion title is goes here. And that is test two.
+												</h4>
+												<p>
+													2 hour ago.
+												</p>
+											</div>
+											
+											<div class="permission_control">
+												<p class="permission_badge">
+													badge
+												</p>
+
+												<div class="permission_btn">
+													<a class="accept" id="" href="" title="">
+														accept
+													</a>
+													<a class="reject" href="" title="">
+														reject
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="permission_item">
+											<div class="permission_img">
+												<img src="src/image/add_two.jpg" alt="">
+											</div>
+											
+											<div class="permission_text">
+												<h4>
+													<span>
+														jhon abraham
+													</span>
+													permssion title is goes here. And that is test two.
+												</h4>
+												<p>
+													2 hour ago.
+												</p>
+											</div>
+											
+											<div class="permission_control">
+												<p class="permission_badge">
+													badge
+												</p>
+
+												<div class="permission_btn">
+													<a class="accept" id="" href="" title="">
+														accept
+													</a>
+													<a class="reject" href="" title="">
+														reject
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="permission_item">
+											<div class="permission_img">
+												<img src="src/image/add_two.jpg" alt="">
+											</div>
+											
+											<div class="permission_text">
+												<h4>
+													<span>
+														jhon abraham
+													</span>
+													invited you to join the group
+													<a href="" title="">
+														The Bengal Tigers
+													</a>
+												</h4>
+												<p>
+													2 hour ago.
+												</p>
+
+												<div class="invited_group">
+													<div class="group_members">
+														<img src="src/image/board_two.jpg" alt="">
+														<img src="src/image/board_one.jpg" alt="">
+														<img src="src/image/board_two.jpg" alt="">
+														<img src="src/image/board_one.jpg" alt="">
+													</div>
+													<div class="group_numbers">
+														<p>
+															<span>
+																433
+															</span>
+															Contacts
+														</p>
+														<p>
+															<span>
+																56749
+															</span>
+															members
+														</p>
+													</div>
+												</div>
+											</div>
+											
+											<div class="permission_control">
+												<p class="permission_badge">
+													badge
+												</p>
+
+												<div class="permission_btn">
+													<a class="accept" id="" href="" title="">
+														join
+													</a>
+													<a class="reject" href="" title="">
+														decline
+													</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="permission_item">
+											<div class="permission_img">
+												<img src="src/image/add_two.jpg" alt="">
+											</div>
+											
+											<div class="permission_text">
+												<h4>
+													<span>
+														jhon abraham
+													</span>
+													permssion title is goes here. And that is test two.
+												</h4>
+												<p>
+													2 hour ago.
+												</p>
+											</div>
+											
+											<div class="permission_control">
+												<p class="permission_badge">
+													badge
+												</p>
+
+												<div class="permission_btn">
+													<a class="accept" id="" href="" title="">
+														accept
+													</a>
+													<a class="reject" href="" title="">
+														reject
+													</a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div id="todos_not" class="not_tab todos_not">
+									<ul>
+										<h4 class="todos_header">
+											To do's to do.
+										</h4>
+
+										<li>
+											<h4 class="todos_name">
+												<i class="fas fa-cog"></i>
+												<span>
+													Mark the to do here.
+												</span>
+											</h4>
+											<div class="todos_action_delete">
+												<a href="" id="todos_action" type="button">
+													action
+												</a>
+												<a href="" id="todos_delete" type="button">
+													remove
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="todos_name">
+												<i class="fas fa-cog"></i>
+												<span>
+													This is the second todo.
+												</span>
+											</h4>
+											<div class="todos_action_delete">
+												<a href="" id="todos_action" type="button">
+													action
+												</a>
+												<a href="" id="todos_delete" type="button">
+													remove
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="todos_name">
+												<i class="fas fa-cog"></i>
+												<span>
+													This to don is not done yet.
+												</span>
+											</h4>
+											<div class="todos_action_delete">
+												<a href="" id="todos_action" type="button">
+													action
+												</a>
+												<a href="" id="todos_delete" type="button">
+													remove
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="todos_name">
+												<i class="fas fa-cog"></i>
+												<span>
+													Try this now.
+												</span>
+											</h4>
+											<div class="todos_action_delete">
+												<a href="" id="todos_action" type="button">
+													action
+												</a>
+												<a href="" id="todos_delete" type="button">
+													remove
+												</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div id="reward_not" class="not_tab reward_not">
+									reward content
+								</div>
+							</div>
+
+							<div id="not_setting" class="not_setting">
+								<ul class="not_setting_list">
+									<li>
+										<p class="not_setting_name">
+											Some text content goes here. Try something.
+										</p>
+										<div class="not_setting_status">
+											<i class="tick fas fa-check"></i>
+											<i class="cross fas fa-times"></i>
+											<span class="circle"></span>
+										</div>
+									</li>
+									<li>
+										<p class="not_setting_name">
+											This option is disabled.
+										</p>
+										<div class="not_setting_status disabled">
+											<i class="tick fas fa-check"></i>
+											<i class="cross fas fa-times"></i>
+											<span class="circle"></span>
+										</div>
+									</li>
+									<li>
+										<p class="not_setting_name">
+											Some text content goes here. And something else.
+										</p>
+										<div class="not_setting_status on">
+											<i class="tick fas fa-check"></i>
+											<i class="cross fas fa-times"></i>
+											<span class="circle"></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-12 not_sidebar_parrent">
+						<div class="not_sidebar">
+							<a class="not_ad_img" href="" title="">
+								<img class="img-fluid" src="src/image/board_two.jpg" alt="ad">
+							</a>
+							<div class="recent_group">
+								<h4 class="recent_group_header">
+									Recently active groups.
+								</h4>
+								<ul class="recent_group_list">
+									<li>
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="">
+										<div class="recent_group_text">
+											<a class="recent_group_name" href="" title="">
+												BD fighters
+											</a>
+											<p class="recent_group_number">
+												25 new posts
+											</p>
+											<span class="recent_group_drop_icon">
+												<i class="fas fa-chevron-right"></i>
+											</span>
+										</div>
+									</li>
+									<li>
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="">
+										<div class="recent_group_text">
+											<a class="recent_group_name" href="" title="">
+												BD fighters
+											</a>
+											<p class="recent_group_number">
+												25 new posts
+											</p>
+											<span class="recent_group_drop_icon">
+												<i class="fas fa-chevron-right"></i>
+											</span>
+										</div>
+									</li>
+									<li>
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="">
+										<div class="recent_group_text">
+											<a class="recent_group_name" href="" title="">
+												BD fighters
+											</a>
+											<p class="recent_group_number">
+												25 new posts
+											</p>
+											<span class="recent_group_drop_icon">
+												<i class="fas fa-chevron-right"></i>
+											</span>
+										</div>
+									</li>
+								</ul>
+								<a class="see_more" href="" title="">
+									see more
+								</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+	</main><!-- /maincontent -->
+
+
+	<footer id="footer" class="footer">
+		<div class="footer_container container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							About Us
+						</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							Necessary Links
+						</h5>
+						<ul>
+							<li>
+								<a href="" title="">
+									For link one
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									To get link two
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Click here link three
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Click here
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							Find us on
+						</h5>
+						<p>
+							Stay Connected with Us. And get the latest update about our thing. Blah Blah.
+						</p>
+						<ul class="social_links">
+							<li>
+								<a href="" title="">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									<i class="fab fa-instagram-square"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+</body>
+</html>

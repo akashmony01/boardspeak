@@ -1,0 +1,3965 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>User Profile</title>
+
+	<!-- including bootstrap css -->
+	<link rel="stylesheet" href="src/style/vendor/bootstrap.min.css">
+	<!-- including font awesome css -->
+	<link rel="stylesheet" href="src/style/vendor/font-awesome/fontawesome.min.css">
+
+	<!-- owl carousel styles -->
+	<link rel="stylesheet" href="src/style/vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="src/style/vendor/owl-carousel/owl.theme.default.min.css">
+	
+	<!-- including custom css -->
+	<link rel="stylesheet" href="src/style/main.css">
+	<link rel="stylesheet" href="src/style/user-profile.css">
+
+	<!-- including jquery -->
+	<script src="src/script/vendor/jquery.min.js"></script>
+	
+	<!-- including popper js -->
+	<script src="src/script/vendor/popper.min.js"></script>
+	<!-- including bootsrap js -->
+	<script src="src/script/vendor/bootstrap.min.js"></script>
+	
+	<!-- owl carousel js -->
+	<script src="src/script/vendor/owl.carousel.min.js"></script>
+
+	<!-- custom js -->
+	<script src="src/script/main.js"></script>
+	<script src="src/script/user-profile.js"></script>
+</head>
+<body>
+	<!-- preloader animation -->
+	<div class="loader">
+		<img src="src/image/loader.gif">
+	</div>
+	<!-- hedaer part start -->
+	<header id="header" class="header sticky-top">
+		<nav class="main_nav_container container">
+
+			<div class="mobile_icon" disabled>
+				<a id="mobile_menu_collase">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+
+			<div class="mobile_nav" id="mobile_nav">
+				<ul class="mobile_nav_container container">
+					<li class="search_box">
+						<input class="form-control" type="text" placeholder="Search">
+						<i class="fas fa-search"></i>
+					</li>
+					<li class="">
+						<a class="" href="#">
+							Find Groups
+						</a>
+					</li>
+					<li class="">
+						<a class="mobile_sub">
+							<i class="fas fa-user"></i>
+							<i class="fas fa-caret-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Help & Support
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Setting
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Addministrator
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Log Out
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<a class="logo_img" href="#">
+				<img class="img-fluid" src="src/image/logo.png" alt="">
+			</a>
+
+			<!-- only desktop nav -->
+			<div class="desk_nav">
+				<ul class="desk_nav_container">
+					<li class="only_desk_item search_box">
+						<input class="form-control" type="text" placeholder="Search">
+						<i class="fas fa-search"></i>
+					</li>
+					<li class="only_desk_item">
+						<a class="" href="#">
+							Find Groups
+						</a>
+					</li>
+					<li class="">
+						<a class="active sub_nav_container">
+							<span>Create Group</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Start a group
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Create a topic
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									a post
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="only_desk_item">
+						<a class="sub_nav_container">
+							<i class="fas fa-user-circle"></i>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Help & Support
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Setting
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Addministrator
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Log Out
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header><!-- /header -->
+
+	<!-- main content start here -->
+	<main id="main" class="main">
+
+		<!-- banner section -->
+		<section class="user_banner" id="user_banner">
+			<div class="user_banner_container">
+				<div class="user_banner_background">
+					<button type="button" class="btn btn-info">
+						<i class="fas fa-camera"></i>
+						<span>
+							Change Background
+						</span>
+					</button>
+				</div>
+
+				<div class="user_banner_info container">
+					<div class="user_profile_img">
+						<img class="img-fluid" src="src/image/user_profile.jpeg" alt="">
+						<a href="">
+							<i class="fas fa-camera"></i>
+							Change Photo
+						</a>
+					</div>
+
+					<div class="user_name_designation">
+						<h1>
+							Jhon Abraham
+						</h1>
+						<p>
+							Managing Director
+							<a href="" title="">
+								<i class="fas fa-edit"></i>
+								Edit Profile
+							</a>
+						</p>
+						<p class="join_for_public">
+							<span>Joined 4th February, 2016.</span>
+							<span>California, USA</span>
+						</p>
+						<div class="user_ext_number">
+							<a href="" title="">
+								Contacts
+								<span>
+									365
+								</span>
+							</a>
+							<a href="" title="">
+								Followed
+								<span>
+									525
+								</span>
+							</a>
+							<a href="" title="">
+								Follwing
+								<span>
+									1541
+								</span>
+							</a>
+						</div>
+						<div class="btn_for_public">
+
+							<div class="d-inline-block">
+								<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									message
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="#">
+										Add User as Contact
+									</a>
+									<a class="dropdown-item" href="#">
+										Message User
+									</a>
+								</div>
+							</div>
+
+							<div class="d-inline-block">
+								<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									follow
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="#">
+										Add to favourites
+									</a>
+									<a class="dropdown-item not_popup_opener">
+										Notification
+									</a>
+									<a class="dropdown-item problem_popup_opener">
+										Problems / Issues
+									</a>
+									<a class="dropdown-item unfollow_popup_opener">
+										Unfollow
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="user_metta">
+						<div class="user_metta_1">
+							<a href="" title="">
+								<span>
+									6
+								</span>
+								groups
+							</a>
+							<a href="" title="">
+								<span>
+									N/A
+								</span>
+								topics
+							</a>
+							<a href="" title="">
+								<span>
+									18
+								</span>
+								post
+							</a>
+						</div>
+						<div class="user_metta_2">
+							<a id="todos_popup_opener" title="">
+								to do's
+								<span>
+									6
+								</span>
+							</a>
+							<a href="notification.html" title="">
+								notification
+								<span>
+									12
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- followed explore section -->
+		<section class="follow_explore_section">
+
+			<div class="follow_explore_header">
+				<div class="follow_explore_header_container container">
+					<ul class="nav text-center">
+
+						<li class="nav-item">
+							<a class="nav-link" id="created_slider">
+								Created
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" id="follow_slider">
+								Followed
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" id="explore_slider">
+								Explore
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="follow_explore_filter">
+				<div class="follow_explore_search_view" id="sticky_search">
+					<form class="form-group">
+						<input class="form-control" type="text" name="search">
+						<button class="btn" type="button">
+							search
+						</button>
+					</form>
+					<div class="follow_explore_view">
+						<a class="" href="" title="">
+							<span>
+								List <br> View
+							</span>
+							<i class="fas fa-list"></i>
+						</a>
+						<a class="d-none" href="" title="">
+							<span>
+								Grid <br> View
+							</span>
+							<i class="fas fa-th"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="filter_btn_container container">
+					<div class="follow_explore_filter_btn text-center owl-carousel owl-theme">
+						<button class="btn filter_btn active" filtered_board="all_board" type="button">
+							All
+						</button>
+						<button class="btn filter_btn" filtered_board="group_board" type="button">
+							Groups
+						</button>
+						<button class="btn filter_btn" filtered_board="topic_board" type="button">
+							Topics
+						</button>
+						<button class="btn filter_btn" filtered_board="post_board" type="button">
+							Post
+						</button>
+						<button class="btn filter_btn" filtered_board="form_board" type="button">
+							Forms
+						</button>
+						<button class="btn filter_btn" filtered_board="event_board" type="button">
+							Event
+						</button>
+						<button class="btn filter_btn" filtered_board="task_board" type="button">
+							Task
+						</button>
+						<button class="btn filter_btn" filtered_board="calender_board" type="button">
+							Calender
+						</button>
+						<button class="btn filter_btn" filtered_board="image_board" type="button">
+							Image
+						</button>
+					</div>
+				</div>
+
+				<div class="filter_dropdown_container container">
+					<div class="filter_dropdown">
+						<ul class="main_dropdown_list">
+							<li>
+								<a class="filter_dropdown_btn">
+									A to Z
+									<i class="fas fa-caret-down"></i>
+								</a>
+								<ul class="secondery_dropdown_list">
+									<li>
+										<a href="" title="">Test One</a>
+									</li>
+									<li>
+										<a href="" title="">Test Two</a>
+									</li>
+									<li>
+										<a href="" title="">Three Test</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="filter_dropdown_btn">
+									Archive
+									<i class="fas fa-caret-down"></i>
+								</a>
+								<ul class="secondery_dropdown_list">
+									<li>
+										<a href="" title="">Test One</a>
+									</li>
+									<li>
+										<a href="" title="">Test Two</a>
+									</li>
+									<li>
+										<a href="" title="">Three Test</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="filter_dropdown_btn">
+									By Admin
+									<i class="fas fa-caret-down"></i>
+								</a>
+								<ul class="secondery_dropdown_list">
+									<li>
+										<a href="" title="">Test One</a>
+									</li>
+									<li>
+										<a href="" title="">Test Two</a>
+									</li>
+									<li>
+										<a href="" title="">Three Test</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="" title="">Favourite</a>
+							</li>
+							<li>
+								<a href="" title="">Latest</a>
+							</li>
+							<li>
+								<a href="" title="">Popular</a>
+							</li>
+							<li>
+								<a href="" title="">Saved</a>
+							</li>
+							<li>
+								<a class="filter_dropdown_btn">
+									Public
+									<i class="fas fa-caret-down"></i>
+								</a>
+								<ul class="secondery_dropdown_list">
+									<li>
+										<a href="" title="">Private</a>
+									</li>
+									<li>
+										<a href="" title="">Secret</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="follow_explore_container">
+
+				<!-- created board slider -->
+				<div id="created_slider_container" class="container">
+					<!-- items for filter button -->
+					<div class="slider_outer group_board">
+						<div class="created_group_slider owl-carousel owl-theme">
+							<div class="item">
+								<div class="default_item create_item">
+									<div class="default_text">
+										<h4>
+										    Organize your group communication.
+									    </h4>
+									    <p>
+										    Get things done, share resource and more
+									    </p>
+									</div>
+									<div class="default_btn">
+										<a class="create_group_btn btn">
+										    Create Group
+									    </a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												Group
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<div class="lock_indicator">
+											<i class="fas fa-lock"></i>
+										</div>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												Group
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<div class="lock_indicator">
+											<i class="fas fa-lock"></i>
+										</div>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												Group
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="create_group_btn btn active" title="">
+								Create Group
+							</a>
+						</div>
+					</div>
+					<!-- items for filter button -->
+					<div class="slider_outer topic_board">
+						<div class="created_topic_slider owl-carousel owl-theme">
+							<div class="item">
+								<div class="default_item create_topic">
+									<div class="default_text">
+										<h4>
+										    Organize your topic communication.
+									    </h4>
+									    <p>
+										    Get things done, share resource and more
+									    </p>
+									</div>
+									<div class="default_btn">
+										<a class="btn" href="" title="">
+										    Create Topics
+									    </a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="btn active" href="" title="">
+								Create Topics
+							</a>
+						</div>
+					</div>
+					<!-- items for filter button -->
+					<div class="slider_outer post_board">
+						<div class="created_post_slider owl-carousel owl-theme">
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="btn active" href="" title="">
+								Create Post
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- followed board slider -->
+				<div id="follow_slider_container" class="container">
+					<!-- items for filter button -->
+					<div class="slider_outer group_board">
+						<div class="follow_group_slider owl-carousel owl-theme">
+							<div class="item">
+								<div class="default_item create_item">
+									<div class="default_text">
+										<h4>
+										    Organize your group communication.
+									    </h4>
+									    <p>
+										    Get things done, share resource and more
+									    </p>
+									</div>
+									<div class="default_btn">
+										<a class="create_group_btn btn">
+										    Create Group
+									    </a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="default_item explore_item">
+									<div class="default_text">
+										<h4>
+										    You are not following any boards yet.
+									    </h4>
+									    <p>
+										    Follow or joined on board and get involved.
+									    </p>
+									</div>
+									<div class="default_btn">
+										<a class="btn" href="" title="">
+										    Explore
+									    </a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+											<div class="lock_indicator">
+												<i class="fas fa-lock"></i>
+											</div>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												Group
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												Group
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												Group
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="create_group_btn btn active">
+								Create Group
+							</a>
+						</div>
+					</div>
+					<!-- items for filter button -->
+					<div class="slider_outer topic_board">
+						<div class="follow_topic_slider owl-carousel owl-theme">
+							<div class="item">
+								<div class="default_item create_topic">
+									<div class="default_text">
+										<h4>
+										    Organize your group communication.
+									    </h4>
+									    <p>
+										    Get things done, share resource and more
+									    </p>
+									</div>
+									<div class="default_btn">
+										<a class="btn" href="" title="">
+										    Create Topic
+									    </a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="default_item explore_item">
+									<div class="default_text">
+										<h4>
+										    You are not following any boards yet.
+									    </h4>
+									    <p>
+										    Follow or joined on board and get involved.
+									    </p>
+									</div>
+									<div class="default_btn">
+										<a class="btn" href="" title="">
+										    Explore
+									    </a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="btn active" href="" title="">
+								Create Topics
+							</a>
+						</div>
+					</div>
+					<!-- items for filter button -->
+					<div class="slider_outer post_board">
+						<div class="follow_post_slider owl-carousel owl-theme">
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="btn active" href="" title="">
+								Create Posts
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- explore board slider -->
+				<div id="explore_slider_container">
+					<!-- featured suggested section -->
+					<div class="feat_sugst_section">
+
+						<div class="feat_sugst_header">
+							<div class="feat_sugst_header_container container">
+								<ul class="nav text-center">
+									<li class="nav-item">
+										<a class="nav-link active" id="feat_slider">
+											Featured
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="sugst_slider">
+											Suggested
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="feat_sugst_container container">
+
+							<!-- featured board slider -->
+							<div id="feat_slider_container">
+								<div class="feat_slider_container owl-carousel owl-theme">
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="d-none" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_one.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="d-none" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- suggested board slider -->
+							<div id="sugst_slider_container">
+								<div class="sugst_slider_container owl-carousel owl-theme">
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="d-none" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+									<div class="item">
+										<div class="board_item">
+											<figure>
+												<figcaption>
+													<div class="save_follow">
+														<a href="">
+															<i class="fas fa-file-download"></i>
+															save
+														</a>
+														<a href="" class="d-none">
+															<i class="fas fa-user-plus"></i>
+															follow
+														</a>
+														<a href="" class="d-inline">
+															<i class="fas fa-user-plus"></i>
+															Invite
+														</a>
+													</div>
+													<div class="more_option">
+														more
+														<i class="fas fa-ellipsis-v"></i>
+
+														<ul class="more_option_item">
+															<li>
+																<a href="">Share</a>
+															</li>
+															<li>
+																<a href="">Pin</a>
+															</li>
+															<li>
+																<a href="">Join</a>
+															</li>
+															<li>
+																<a href="">Quick View</a>
+															</li>
+														</ul>
+													</div>
+												</figcaption>
+												<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+											</figure>
+											<summary class="board_info">
+												<h3 class="board_title">
+													<a href="">
+														Your Title Goes Here
+													</a> 
+													<a href="">
+														Group
+													</a>
+												</h3>
+												<h4 class="board_metta">
+													<a class="d-none" id="pinned_board">
+														<i class="fas fa-thumbtack"></i>
+													</a>
+													<a id="board_comment">
+														32
+														<i class="fas fa-comment"></i>
+													</a>
+													<a id="board_like">
+														93
+														<i class="fas fa-heart"></i>
+													</a>
+												</h4>
+											</summary>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- items for filter button -->
+					<div class="slider_outer group_board container">
+						<div class="explore_group_slider owl-carousel owl-theme">
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="post_item card">
+
+								<div class="post_img">
+
+									<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+									<div class="post_img_inner">
+
+										<div class="save_follow">
+											<a href="">
+												<i class="fas fa-file-download"></i>
+												save
+											</a>
+											<a href="" class="d-inline">
+												<i class="fas fa-user-plus"></i>
+												follow
+											</a>
+											<a href="" class="d-none">
+												<i class="fas fa-user-plus"></i>
+												Invite
+											</a>
+										</div>
+
+										<div class="more_option">
+											more
+											<i class="fas fa-ellipsis-v"></i>
+
+											<ul class="more_option_item">
+												<li>
+													<a href="">Share</a>
+												</li>
+												<li>
+													<a href="">Pin</a>
+												</li>
+												<li>
+													<a href="">Join</a>
+												</li>
+												<li>
+													<a href="">Quick View</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="post_summery">
+									<a class="post_title">
+										Post title goes here.
+									</a>
+									<p class="post_text">
+										Some quick example text to build on. ANd that will be description.</p>
+									<a href="" class="author_info">
+										<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+										<div class="author_name">
+											<h5>
+												Jhon Abraham
+											</h5>
+											<p>
+												Actor, Producer
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="create_group_btn btn active">
+								Create Group
+							</a>
+						</div>
+					</div>
+					<!-- items for filter button -->
+					<div class="slider_outer topic_board container">
+						<div class="explore_topic_slider owl-carousel owl-theme">
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												topic
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="btn active" href="" title="">
+								Create Topics
+							</a>
+						</div>
+					</div>
+					<!-- items for filter button -->
+					<div class="slider_outer post_board container">
+						<div class="explore_post_slider owl-carousel owl-theme">
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												post
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												post
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												post
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+							<div class="item">
+								<div class="board_item">
+									<figure>
+										<figcaption>
+											<div class="save_follow">
+												<a href="">
+													<i class="fas fa-file-download"></i>
+													save
+												</a>
+												<a href="" class="d-none">
+													<i class="fas fa-user-plus"></i>
+													follow
+												</a>
+												<a href="" class="d-inline">
+													<i class="fas fa-user-plus"></i>
+													Invite
+												</a>
+											</div>
+											<div class="more_option">
+												more
+												<i class="fas fa-ellipsis-v"></i>
+
+												<ul class="more_option_item">
+													<li>
+														<a href="">Share</a>
+													</li>
+													<li>
+														<a href="">Pin</a>
+													</li>
+													<li>
+														<a href="">Join</a>
+													</li>
+													<li>
+														<a href="">Quick View</a>
+													</li>
+												</ul>
+											</div>
+										</figcaption>
+										<img class="img-fluid" src="src/image/board_two.jpg" alt="board-img">
+									</figure>
+									<summary class="board_info">
+										<h3 class="board_title">
+											<a href="">
+												Your Title Goes Here
+											</a> 
+											<a href="">
+												post
+											</a>
+										</h3>
+										<h4 class="board_metta">
+											<a class="d-none" id="pinned_board">
+												<i class="fas fa-thumbtack"></i>
+											</a>
+											<a id="board_comment">
+												32
+												<i class="fas fa-comment"></i>
+											</a>
+											<a id="board_like">
+												93
+												<i class="fas fa-heart"></i>
+											</a>
+										</h4>
+									</summary>
+								</div>
+							</div>
+						</div>
+						<div class="view_all">
+							<a class="btn" href="" title="">
+								View All
+							</a>
+							<a class="btn active" href="" title="">
+								Create Posts
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ad section -->
+		<section class="ad_section">
+			<div class="container">
+				<div class="user_ad_slider owl-carousel owl-theme">
+					<a href="" title="">
+						<img class="img-fluid" src="src/image/board_two.jpg" alt="add-img">
+					</a>
+					<a href="" title="">
+						<img class="img-fluid" src="src/image/board_one.jpg" alt="add-img">
+					</a>
+					<a href="" title="">
+						<img class="img-fluid" src="src/image/user_background.jpg" alt="add-img">
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- popular post section -->
+		<section class="user_popular_post">
+			<div class="user_popular_post_header pb-5">
+				<h2 class="text-center mb-2">
+					Popular Post
+				</h2>
+			</div>	
+			<div class="user_popular_post_container container owl-carousel owl-theme">
+				<div class="post_item card">
+
+					<div class="post_img">
+
+						<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+						<div class="post_img_inner">
+
+							<div class="save_follow">
+								<a href="">
+									<i class="fas fa-file-download"></i>
+									save
+								</a>
+								<a href="" class="d-inline">
+									<i class="fas fa-user-plus"></i>
+									follow
+								</a>
+								<a href="" class="d-none">
+									<i class="fas fa-user-plus"></i>
+									Invite
+								</a>
+							</div>
+
+							<div class="more_option">
+								more
+								<i class="fas fa-ellipsis-v"></i>
+
+								<ul class="more_option_item">
+									<li>
+										<a href="">Share</a>
+									</li>
+									<li>
+										<a href="">Pin</a>
+									</li>
+									<li>
+										<a href="">Join</a>
+									</li>
+									<li>
+										<a href="">Quick View</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="post_summery">
+						<a class="post_title">
+							Post title goes here.
+						</a>
+						<p class="post_text">
+							Some quick example text to build on. ANd that will be description.</p>
+						<a href="" class="author_info">
+							<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+							<div class="author_name">
+								<h5>
+									Jhon Abraham
+								</h5>
+								<p>
+									Actor, Producer
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="post_item card">
+
+					<div class="post_img">
+
+						<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+						<div class="post_img_inner">
+
+							<div class="save_follow">
+								<a href="">
+									<i class="fas fa-file-download"></i>
+									save
+								</a>
+								<a href="" class="d-inline">
+									<i class="fas fa-user-plus"></i>
+									follow
+								</a>
+								<a href="" class="d-none">
+									<i class="fas fa-user-plus"></i>
+									Invite
+								</a>
+							</div>
+
+							<div class="more_option">
+								more
+								<i class="fas fa-ellipsis-v"></i>
+
+								<ul class="more_option_item">
+									<li>
+										<a href="">Share</a>
+									</li>
+									<li>
+										<a href="">Pin</a>
+									</li>
+									<li>
+										<a href="">Join</a>
+									</li>
+									<li>
+										<a href="">Quick View</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="post_summery">
+						<a class="post_title">
+							Post title goes here.
+						</a>
+						<p class="post_text">
+							Some quick example text to build on. ANd that will be description.</p>
+						<a href="" class="author_info">
+							<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+							<div class="author_name">
+								<h5>
+									Jhon Abraham
+								</h5>
+								<p>
+									Actor, Producer
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="post_item card">
+
+					<div class="post_img">
+
+						<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+						<div class="post_img_inner">
+
+							<div class="save_follow">
+								<a href="">
+									<i class="fas fa-file-download"></i>
+									save
+								</a>
+								<a href="" class="d-inline">
+									<i class="fas fa-user-plus"></i>
+									follow
+								</a>
+								<a href="" class="d-none">
+									<i class="fas fa-user-plus"></i>
+									Invite
+								</a>
+							</div>
+
+							<div class="more_option">
+								more
+								<i class="fas fa-ellipsis-v"></i>
+
+								<ul class="more_option_item">
+									<li>
+										<a href="">Share</a>
+									</li>
+									<li>
+										<a href="">Pin</a>
+									</li>
+									<li>
+										<a href="">Join</a>
+									</li>
+									<li>
+										<a href="">Quick View</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="post_summery">
+						<a class="post_title">
+							Post title goes here.
+						</a>
+						<p class="post_text">
+							Some quick example text to build on. ANd that will be description.</p>
+						<a href="" class="author_info">
+							<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+							<div class="author_name">
+								<h5>
+									Jhon Abraham
+								</h5>
+								<p>
+									Actor, Producer
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="post_item card">
+
+					<div class="post_img">
+
+						<img class="card-img-top" src="src/image/board_two.jpg" alt="Card image cap">
+
+						<div class="post_img_inner">
+
+							<div class="save_follow">
+								<a href="">
+									<i class="fas fa-file-download"></i>
+									save
+								</a>
+								<a href="" class="d-inline">
+									<i class="fas fa-user-plus"></i>
+									follow
+								</a>
+								<a href="" class="d-none">
+									<i class="fas fa-user-plus"></i>
+									Invite
+								</a>
+							</div>
+
+							<div class="more_option">
+								more
+								<i class="fas fa-ellipsis-v"></i>
+
+								<ul class="more_option_item">
+									<li>
+										<a href="">Share</a>
+									</li>
+									<li>
+										<a href="">Pin</a>
+									</li>
+									<li>
+										<a href="">Join</a>
+									</li>
+									<li>
+										<a href="">Quick View</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="post_summery">
+						<a class="post_title">
+							Post title goes here.
+						</a>
+						<p class="post_text">
+							Some quick example text to build on. ANd that will be description.</p>
+						<a href="" class="author_info">
+							<img class="img-fluid" src="src/image/about_one.jpg" alt="author">
+							<div class="author_name">
+								<h5>
+									Jhon Abraham
+								</h5>
+								<p>
+									Actor, Producer
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main><!-- /maincontent -->
+
+	<footer id="footer" class="footer">
+		<div class="footer_container container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							About Us
+						</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							Necessary Links
+						</h5>
+						<ul>
+							<li>
+								<a href="" title="">
+									For link one
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									To get link two
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Click here link three
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Click here
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							Find us on
+						</h5>
+						<p>
+							Stay Connected with Us. And get the latest update about our thing. Blah Blah.
+						</p>
+						<ul class="social_links">
+							<li>
+								<a href="" title="">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									<i class="fab fa-instagram-square"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+
+
+	<!-- popup content -->
+	<div class="popup_container todos_not_popup">
+		<div id="todos_not" class="popup_item todos_not">
+			<span class="popup_closer todos_popup_closer">
+				<i class="cross fas fa-times"></i>
+			</span>
+			<ul>
+				<h4 class="todos_header">
+					To do's to do.
+				</h4>
+
+				<li>
+					<h4 class="todos_name">
+						<i class="fas fa-cog"></i>
+						<span>
+							Mark the to do here.
+						</span>
+					</h4>
+					<div class="todos_action_delete">
+						<a href="" id="todos_action" type="button">
+							action
+						</a>
+						<a href="" id="todos_delete" type="button">
+							remove
+						</a>
+					</div>
+				</li>
+				<li>
+					<h4 class="todos_name">
+						<i class="fas fa-cog"></i>
+						<span>
+							This is the second todo.
+						</span>
+					</h4>
+					<div class="todos_action_delete">
+						<a href="" id="todos_action" type="button">
+							action
+						</a>
+						<a href="" id="todos_delete" type="button">
+							remove
+						</a>
+					</div>
+				</li>
+				<li>
+					<h4 class="todos_name">
+						<i class="fas fa-cog"></i>
+						<span>
+							This to don is not done yet.
+						</span>
+					</h4>
+					<div class="todos_action_delete">
+						<a href="" id="todos_action" type="button">
+							action
+						</a>
+						<a href="" id="todos_delete" type="button">
+							remove
+						</a>
+					</div>
+				</li>
+				<li>
+					<h4 class="todos_name">
+						<i class="fas fa-cog"></i>
+						<span>
+							Try this now.
+						</span>
+					</h4>
+					<div class="todos_action_delete">
+						<a href="" id="todos_action" type="button">
+							action
+						</a>
+						<a href="" id="todos_delete" type="button">
+							remove
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="popup_container create_group_popup">
+		<div class="popup_item create_group_popup_item">
+			<span class="popup_closer create_group_popup_closer">
+				<i class="cross fas fa-times"></i>
+			</span>
+			<h2 class="create_header_bar">
+				Create Group
+			</h2>
+
+			<div class="group_upper text-center">
+				<h3>
+					Organize your group communication.
+				</h3>
+				<p class="mt-4 mb-4">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+				<img class="w-100" src="src/image/ceate_group_poppup.png" alt="">
+			</div>
+
+			<div class="group_middler row align-items-center">
+				<div class="col-12 pb-4 middler_inner">
+					<p>
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</p>
+					<a class="learn_more_btn btn btn-light" href="" title="">Learn More</a>
+				</div>
+
+				<div class="col-12">
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="not_again">
+						<label class="form-check-label ml-1" for="not_again">
+							Do not show this again.
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="get_started pt-5">
+				<a class="get_started_btn btn btn-info w-100" href="" title="">Get strated</a>
+				<p class="info_text">
+					By clicking get started you agree to
+					<a href="">BoardSpeak Terms</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup_container unfollow_popup">
+		<div class="popup_item unfollow_popup_item">
+			<span class="popup_closer unfollow_popup_closer">
+				<i class="cross fas fa-times"></i>
+			</span>
+			<div class="popup_body">
+				<img src="src/image/user_profile.jpeg" alt="">
+				<p>
+					Lorem, ipsum dolor sit amet consectetur
+					<a href="">Link One</a>
+					adipisicing elit. Nulla, magni?
+					Lorem ipsum dolor sit amet.
+				</p>
+				<a class="unfollow_btn" href="">
+					Unfollow
+				</a>
+			</div>
+			<button class="btn unfollow_popup_closer">
+				Cancel
+			</button>
+		</div>
+	</div>
+	<div class="popup_container problem_popup">
+		<div class="popup_item problem_popup_item">
+			<span class="popup_closer problem_popup_closer">
+				<i class="cross fas fa-times"></i>
+			</span>
+			<h4 class="popup_header">
+				Problems / Issues
+			</h4>
+			<div class="popup_body">
+				<img src="src/image/user_profile.jpeg" alt="">
+				<h5>
+					Are you having issues/problems with
+					<a href="">JamedAnderson</a>?
+				</h5>
+				<div class="problem_option">
+					<div class="option_item">
+						<h6>Block</h6>
+						<div class="option_switch">
+							<span></span>
+						</div>
+					</div>
+					<div class="option_item">
+						<h6>Remove as Contact</h6>
+						<div class="option_switch">
+							<span></span>
+						</div>
+					</div>
+					<div class="option_item">
+						<h6>Report</h6>
+						<div class="option_switch">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="problem_info">
+					<i class="far fa-paper-plane"></i>
+					<p>
+						Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Possimus, quae!
+					</p>
+				</div>
+			</div>
+			<a href="" class="btn save_probelm_option">
+				Save Changes
+			</a>
+		</div>
+	</div>
+	<div class="popup_container not_popup">
+		<div class="popup_item not_popup_item">
+			<span class="popup_closer not_popup_closer">
+				<i class="cross fas fa-times"></i>
+			</span>
+			<h4 class="popup_header">
+				Problems / Issues
+			</h4>
+			<div class="popup_body">
+				<div class="problem_option">
+					<div class="option_item">
+						<h6>Post</h6>
+						<div class="option_switch">
+							<span></span>
+						</div>
+					</div>
+					<div class="option_item">
+						<h6>topics</h6>
+						<div class="option_switch">
+							<span></span>
+						</div>
+					</div>
+					<div class="option_item">
+						<h6>Group</h6>
+						<div class="option_switch">
+							<span></span>
+						</div>
+					</div>
+					<div class="option_item">
+						<h6>Group</h6>
+						<a href="" class="option_link">
+							Some
+							<i class="fas fa-angle-right"></i>
+						</a>
+					</div>
+				</div>
+				<div class="problem_info">
+					<p class="text-left">
+						Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Possimus, quae!
+						<a href="">Link is here..</a>
+					</p>
+				</div>
+			</div>
+			<a href="" class="btn save_not_option">
+				Save Changes
+			</a>
+		</div>
+	</div>
+</body>
+</html>

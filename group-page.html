@@ -1,0 +1,1152 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>User Profile</title>
+
+	<!-- including bootstrap css -->
+	<link rel="stylesheet" href="src/style/vendor/bootstrap.min.css">
+	<!-- including font awesome css -->
+	<link rel="stylesheet" href="src/style/vendor/font-awesome/fontawesome.min.css">
+
+	<!-- owl carousel styles -->
+	<link rel="stylesheet" href="src/style/vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="src/style/vendor/owl-carousel/owl.theme.default.min.css">
+	
+	<!-- including custom css -->
+	<link rel="stylesheet" href="src/style/main.css">
+	<link rel="stylesheet" href="src/style/group-page.css">
+
+	<!-- including jquery -->
+	<script src="src/script/vendor/jquery.min.js"></script>
+	
+	<!-- including popper js -->
+	<script src="src/script/vendor/popper.min.js"></script>
+	<!-- including bootsrap js -->
+	<script src="src/script/vendor/bootstrap.min.js"></script>
+	
+	<!-- owl carousel js -->
+	<script src="src/script/vendor/owl.carousel.min.js"></script>
+
+	<!-- custom js -->
+	<script src="src/script/main.js"></script>
+	<script src="src/script/group-page.js"></script>
+</head>
+<body>
+	<!-- preloader animation -->
+	<div class="loader">
+		<img src="src/image/loader.gif">
+	</div>
+	<!-- hedaer part start -->
+	<header id="header" class="header sticky-top">
+		<nav class="main_nav_container container">
+
+			<div class="mobile_icon" disabled>
+				<a id="mobile_menu_collase">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+
+			<div class="mobile_nav" id="mobile_nav">
+				<ul class="mobile_nav_container container">
+					<li class="search_box">
+						<input class="form-control" type="text" placeholder="Search">
+						<i class="fas fa-search"></i>
+					</li>
+					<li class="">
+						<a class="" href="#">
+							Find Groups
+						</a>
+					</li>
+					<li class="">
+						<a class="mobile_sub">
+							<i class="fas fa-user"></i>
+							<i class="fas fa-caret-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Help & Support
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Setting
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Addministrator
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Log Out
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<a class="logo_img" href="#">
+				<img class="img-fluid" src="src/image/logo.png" alt="">
+			</a>
+
+			<!-- only desktop nav -->
+			<div class="desk_nav">
+				<ul class="desk_nav_container">
+					<li class="only_desk_item search_box">
+						<input class="form-control" type="text" placeholder="Search">
+						<i class="fas fa-search"></i>
+					</li>
+					<li class="only_desk_item">
+						<a class="" href="#">
+							Find Groups
+						</a>
+					</li>
+					<li class="">
+						<a class="active sub_nav_container">
+							<span>Create Group</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Start a group
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Create a topic
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									a post
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="only_desk_item">
+						<a class="sub_nav_container">
+							<i class="fas fa-user-circle"></i>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul class="sub_nav">
+							<li>
+								<a href="" title="">
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Help & Support
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Setting
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Addministrator
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Log Out
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header><!-- /header -->
+
+	<!-- main content start here -->
+	<main id="gp_main" class="gp_main">
+		<section class="banner_desc">			
+			<!-- group desc section -->
+			<div class="group_desc">
+				<div class="group_desc_container container">
+					<div class="group_text">
+						<h3 class="group_name">
+							Newbie Programmers 
+						</h3>
+						<p class="group_metta">
+							<span class="group_badge">
+								public
+							</span>
+
+							<span class="group_hearts">
+								<i class="fas fa-heart"></i>
+								192
+							</span>
+
+							<span class="group_memebers">
+								3225
+							</span>
+							members
+						</p>
+
+						<p class="group_taggline">
+							The grouops tagline goes here.
+						</p>
+					</div>
+					<div class="group_btn">			
+						<!-- only visible if board is followed -->
+						<button class="invite_member_btn btn" type="button">
+							invite Members 
+						</button>
+						
+						<div class="secondery_item">
+							<span class="secondery_btn">
+								<i class="fas fa-ellipsis-v"></i>
+							</span>
+							<ul class="secondery_dropdown">
+								<li>
+									<a href="">
+										Share
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="far fa-star"></i>
+										Add to favourites
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Pin
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Grouop Settings
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- banner section -->
+			<div class="gp_banner">
+				<div class="banner_container">
+					<button class="change_bg_btn btn btn-info">
+						<i class="fas fa-camera"></i>
+						Change Board Cover
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- group info only visble to admin and editor -->
+		<section class="group_info">
+			<form class="group_info_container container">
+				<!-- tab nave -->
+				<div class="grup_info_nav">
+					<ul>
+						<li>
+							<a href="" class="active">
+								Group Info
+							</a>
+						</li>
+						<li>
+							<a href="#member" class="">
+								Members
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								Notification
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								Images
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								Videos
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								Files
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								Links
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- for item -->
+				<div class="form-group">
+					<h6>Category</h6>
+					<select class="form-control" name="" id="slecet1">
+						<option value="">Option one is here</option>
+						<option value="">Option one is here</option>
+						<option value="">Option one is here</option>
+						<option value="">Option one is here</option>
+						<option value="">Option one is here</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<h6>Sub Category</h6>
+					<select class="form-control" name="" id="slecet1">
+						<option value="">Sub category one is here</option>
+						<option value="">Sub category here</option>
+						<option value="">Sub categoryhere</option>
+						<option value="">Sub category one is here</option>
+						<option value="">Sub categorys here</option>
+					</select>
+					<input class="form-control mt-3" type="text" placeholder="type something here">
+				</div>
+				<div class="form-group">
+					<h6>Group Neame</h6>
+					<input class="form-control mt-2" type="text" placeholder="type something here">
+				</div>
+				<div class="form-group">
+					<h6>Group Descrpton</h6>
+					<textarea class="form-control" name="" id=""></textarea>
+				</div>
+				<div class="form-group">
+					<h6>Key Word tags</h6>
+					<input class="form-control mt-2" type="text" placeholder="type something here">
+				</div>
+				<div class="form-group radio_btn_group">
+					<h6>Privacy</h6>
+					<div class="radio_btn_item">
+						<input id="privacy1" type="radio" name="pricvacy_opton">
+						<p>
+							<label for="privacy1">
+								Public
+							</label>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="radio_btn_item">
+						<input id="privacy2" type="radio" name="pricvacy_opton">
+						<p>
+							<label for="privacy2">
+								Private
+							</label>
+							Lorem, ipsum dolor sit amet dipisicing elit.
+						</p>
+					</div>
+					<div class="radio_btn_item">
+						<input id="privacy3" type="radio" name="pricvacy_opton">
+						<p>
+							<label for="privacy3">
+								Secret
+							</label>
+							Lorem, ipsum dolor sit amet dfg arg udfcdipisicing elit.
+						</p>
+					</div>
+				</div>
+				<div id="member" class="form-group member_roles">
+					<h4>
+						Particiants
+						<span>
+							<a class="invite_member_btn">
+								Add
+							</a>
+						</span>
+						<span>
+							<a class="user_role_btn">
+								Manage
+							</a>
+						</span>
+					</h4>
+					<h6>
+						1 Member and 2 Admins
+					</h6>
+					<div class="members_list">
+						<div class="members_img">
+							<img  src="src/image/user_profile.jpeg" alt="member">
+						</div>
+						<p>
+							<span>Marry</span> is a member.
+						</p>
+					</div>
+					<div class="admin_list">
+						<div class="admin_img">
+							<img  src="src/image/user_profile.jpeg" alt="member">
+							<img  src="src/image/user_background.jpg" alt="member">
+						</div>
+						<p>
+							<span>Shushant</span> and <span>Jamal</span> are admin.
+						</p>
+					</div>
+				</div>
+				<div class="form-group form_button">
+					<button class="btn btn-light" type="button">
+						Cancel
+					</button>
+					<button class="btn change_info" type="submit">
+						Save changes
+					</button>
+				</div>
+			</form>
+		</section>
+	</main><!-- /maincontent -->
+
+	<footer id="footer" class="footer">
+		<div class="footer_container container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							About Us
+						</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							Necessary Links
+						</h5>
+						<ul>
+							<li>
+								<a href="" title="">
+									For link one
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									To get link two
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Click here link three
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									Click here
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_item">
+						<h5>
+							Find us on
+						</h5>
+						<p>
+							Stay Connected with Us. And get the latest update about our thing. Blah Blah.
+						</p>
+						<ul class="social_links">
+							<li>
+								<a href="" title="">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="">
+									<i class="fab fa-instagram-square"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+
+
+	<!-- modal popup content -->
+	<div class="modal_container">
+		<!-- add meber popup -->
+		<div class="modal_item invite_members">
+			<span class="modal_closer invite_members_closer">
+				<i class="fas fa-times"></i>
+			</span>
+			<div class="invite_option">
+				<span>
+					<button class="btn btn-light">
+						Add members
+					</button>
+					<button class="btn add_btn">
+						Add admin
+					</button>
+				</span>
+
+				<span>
+					<a href="">
+						Done
+					</a>
+				</span>
+			</div>
+			<div class="search_member form-group">
+				<input class="form-control" type="text">
+				<button class="btn btn-info" type="button">
+					search
+				</button>
+			</div>
+			<a href="" class="share_link">
+				<span>
+					<i class="fas fa-link"></i>
+				</span>
+				<p>
+					Share link to invite people to the group.
+				</p>
+			</a>
+			<ul class="suggest_members">
+				<li>
+					<div class="user_name_img">
+						<img src="src/image/user_profile.jpeg" alt="user">
+						<p>
+							Nabinta Chawdhury
+						</p>
+					</div>
+					<button class="add_member_btn added_member btn">
+						Added
+					</button>
+				</li>
+				<li>
+					<div class="user_name_img">
+						<img src="src/image/user_profile.jpeg" alt="user">
+						<p>
+							Nabinta Chawdhury
+						</p>
+					</div>
+					<button class="add_member_btn btn btn-light">
+						<i class="fas fa-check"></i>
+						Add
+					</button>
+				</li>
+				<li>
+					<div class="user_name_img">
+						<img src="src/image/user_profile.jpeg" alt="user">
+						<p>
+							Nabinta Chawdhury
+						</p>
+					</div>
+					<button class="add_member_btn btn btn-light">
+						<i class="fas fa-check"></i>
+						Add
+					</button>
+				</li>
+				<li>
+					<div class="user_name_img">
+						<img src="src/image/user_profile.jpeg" alt="user">
+						<p>
+							Nabinta Chawdhury
+						</p>
+					</div>
+					<button class="add_member_btn btn btn-light">
+						<i class="fas fa-check"></i>
+						Add
+					</button>
+				</li>
+			</ul>
+		</div>
+		<!-- member role popup -->
+		<div class="modal_item user_role">
+			<span class="modal_closer invite_members_closer">
+				<i class="fas fa-times"></i>
+			</span>
+			<h6>
+				Manage user roles
+				<a href="">
+					Learn More
+				</a>
+			</h6>
+			<div class="search_member form-group">
+				<input class="form-control" type="text">
+				<button class="btn" type="button">
+					search
+				</button>
+			</div>
+			<ul class="user_role_list">
+				<li>
+					<a disabled>
+						Roles
+						<i class="fas fa-filter"></i>	
+					</a>
+				</li>
+				<li>
+					<a class="role_option active" role_tab_id="all_members">
+						All
+					</a>
+				</li>
+				<li>
+					<a class="role_option" role_tab_id="super_admin">
+						Super Admin
+					</a>
+				</li>
+				<li>
+					<a class="role_option" role_tab_id="admin">
+						Admin	
+					</a>
+				</li>
+				<li>
+					<a class="role_option" role_tab_id="member">
+						Members
+					</a>
+				</li>
+				<li>
+					<a class="role_option" role_tab_id="follower">
+						Followers
+					</a>
+				</li>
+			</ul>
+			<div class="suggest_member_tabs">
+				<ul id="super_admin" class="suggest_members">
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown exist_role">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Super Admin
+							</a>
+							<button class="change_role_btn">
+								Change Role
+							</button>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id="admin" class="suggest_members">
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id="member" class="suggest_members">
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id="follower" class="suggest_members">
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="user_name_img">
+							<img src="src/image/user_profile.jpeg" alt="user">
+							<p>
+								Nabinta Chawdhury
+								<span>
+									CEO. Manager
+								</span>
+							</p>
+						</div>
+						<div id="role_dropdown" class="role_dropdown">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+							<a class="role_opener">
+								Choose a role
+							</a>
+							<div class="role_secondery">
+								<a class="role_item">
+									Member
+								</a>
+								<a class="role_item">
+									Super Admin
+								</a>
+								<a class="role_item">
+									Admin
+								</a>
+								<a class="role_item">
+									Follower
+								</a>
+								<a class="role_item">
+									Remove From The Group
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

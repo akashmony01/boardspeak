@@ -1,0 +1,124 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Home Page</title>
+
+	<!-- including bootstrap css -->
+	<link rel="stylesheet" href="src/style/vendor/bootstrap.min.css">
+	<!-- including font awesome css -->
+	<link rel="stylesheet" href="src/style/vendor/font-awesome/fontawesome.min.css">
+	
+	<!-- including custom css -->
+	<link rel="stylesheet" href="src/style/popup.css">
+
+	<!-- including jquery -->
+	<script src="src/script/vendor/jquery.min.js"></script>
+	
+	<!-- including popper js -->
+	<script src="src/script/vendor/popper.min.js"></script>
+	<!-- including bootsrap js -->
+    <script src="src/script/vendor/bootstrap.min.js"></script>
+    
+
+    <!-- including bootsrap js -->
+	<script src="src/script/popup.js"></script>
+	
+
+</head>
+<body>
+    <!-- popup items start here
+        to connect the popup just copy the popup items paste where it needed
+        then just add the "popup.css" and "popup.js" to the page you paste popup 
+        js and css file is attached with that file also -->
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- the bootrap js, css and jquery js is also required -->
+
+    <!-- ======================================================== -->
+    <!-- popup one -->
+    <div id="non_registered_popup" class="popup_container">
+        <div id="non_registered_popup_item" class="popup_item">
+            <span id="non_registered_popup_closer" class="popup_closer_btn">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="popup_link">
+                <h4>
+                    Join BoardSpeak24 Here
+                </h4>
+                <a href="">
+                    https://www.boardspeak.com/account/view/group/29
+                </a>
+            </div>
+            <a class="popup_attach" href="">
+                <img src="src/image/user_background.jpg" alt="">
+                <div class="popup_info">
+                    <h6>
+                        BoardSpeak24
+                    </h6>
+                    <p>
+                        It is really a close group.
+                    </p>
+                    <span>
+                        2:30 PM
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- popup two -->
+    <div id="registered_popup" class="popup_container">
+        <div id="registered_popup_item" class="popup_item registered_popup">
+            <span id="registered_popup_closer" class="popup_closer_btn">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="popup_header">
+                <img src="src/image/board_one.jpg" alt="">
+                <a href="">
+                    BoardSpeak24
+                    <i class="fas fa-check-circle"></i>
+                </a>
+            </div>
+            <div class="popup_body">
+                <p>
+                    This is the place where will be the description text.
+                    You can stretch it.
+                </p>
+                <p>
+                    Here will be the second paragraph. So That is it for here.
+                </p>
+            </div>
+            <div class="popup_bottom">
+                <a class="cancel" href="">
+                    Cancel
+                </a>
+                <a class="join" href="">
+                    Join
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- poppup action button -->
+    <!-- "non_registered_popup_opener" and "registered_popup_opener" this two id
+        have to added to the item want trigger these popup -->
+    <!-- ------------------------------------------------------------------------ -->
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; height: 100%;">
+        
+        <!-- popup one trigger -->
+        <button id="non_registered_popup_opener" class="btn btn-info m-2">
+            Open Non register Popup
+        </button>
+    
+        <!-- popup two trigger -->
+        <button id="registered_popup_opener" class="btn btn-success m-2">
+            Open register Popup
+        </button>
+    </div>
+
+</body>
+</html>
