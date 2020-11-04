@@ -17,30 +17,24 @@ section.banner_desc{
 
 
 .gp_main .gp_banner {
-  padding: 25px 0;
   width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
   .gp_main .gp_banner {
     order: 1;
-    padding-top: 0;
+    margin-bottom: 25px;
   }
 }
 
-.gp_main .gp_banner .banner_container {
-  min-height: 300px;
-  background-image: url("../image/about_two.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.gp_main .gp_banner .banner_container img{
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 767px) {
   .gp_main .gp_banner .banner_container {
     box-shadow: 0px 0px 1px 0px silver;
-    min-height: 200px;
     border-radius: 0;
   }
 }
@@ -85,6 +79,12 @@ section.banner_desc{
   margin-bottom: 15px;
 }
 
+@media only screen and (min-width: 769px) {
+  .gp_main .group_desc .group_desc_container .group_text h3.group_name {
+    font-size: 2.5vw;
+  }
+}
+
 .gp_main .group_desc .group_desc_container .group_text p {
   font-size: 16px;
   font-family: montserrat-regular;
@@ -92,7 +92,11 @@ section.banner_desc{
   margin-bottom: 2.5px;
   line-height: 20px;
 }
-
+@media only screen and (min-width: 769px) {
+  .gp_main .group_desc .group_desc_container .group_text p {
+    font-size: 1.3vw;
+  }
+}
 .gp_main .group_desc .group_desc_container .group_text p.group_metta {
   display: flex;
   flex-wrap: wrap;
