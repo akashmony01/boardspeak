@@ -217,19 +217,52 @@ header.header nav.main_nav_container ul.desk_nav_container li {
   position: relative;
 }
 
+header.header nav.main_nav_container ul.desk_nav_container li.search_box{
+  min-width: 20px;
+  cursor: pointer;
+}
+
 header.header nav.main_nav_container ul.desk_nav_container li.search_box input {
   background-color: #fff;
   font-family: sans-serif;
-  padding-left: 30px;
+  width: 0px;
+  opacity: 0;
+  transition: .3s;
+  padding: 0;
 }
 
-header.header nav.main_nav_container ul.desk_nav_container li.search_box i {
+header.header nav.main_nav_container ul.desk_nav_container
+li.search_box.slided_search input {
+  width: 220px;
+  opacity: 1;
+  padding: 6px 12px;
+  padding-left: 35px;
+}
+
+header.header nav.main_nav_container ul.desk_nav_container li.search_box i{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  left: 0px;
+  font-size: 16px;
+  color: #7B7474;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 0;
+  transition: .3s;
+}
+
+header.header nav.main_nav_container ul.desk_nav_container
+li.search_box i:hover{
+  color: #15AFE8;
+}
+
+header.header nav.main_nav_container ul.desk_nav_container
+li.search_box.slided_search i{
   left: 10px;
   font-size: 14px;
-  color: #7B7474;
 }
 
 header.header nav.main_nav_container ul.desk_nav_container li a {

@@ -176,3 +176,18 @@ $(document).ready(function(){
     	$(this).parent().toggleClass('expanded_menu');
     });
 });
+
+
+
+
+// header searchbox slided
+$(document).ready(function(){
+    $(".only_desk_item.search_box > i").click(function(){
+		$(".only_desk_item.search_box").toggleClass('slided_search');
+		$( ".only_desk_item.search_box > input" ).focus();
+	});
+	// hide search bar
+	$( ".only_desk_item.search_box > input" ).focusout(function() {
+        $(".only_desk_item.search_box").removeClass('slided_search');
+    });
+});
