@@ -1838,7 +1838,6 @@ h6{
   /* layout */
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .popup_container.follower_popup 
@@ -1848,6 +1847,7 @@ h6{
 .contact_popup_left .contact_content .contact_content_item
 .contacts_list li .contact_profile{
   display: flex;
+  width: calc(100% - 140px);
 }
 
 .popup_container.follower_popup 
@@ -1888,6 +1888,16 @@ h6{
 
 .popup_container.follower_popup 
 .follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_action,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_action{
+  width: 140px;
+  text-align: right;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
 .followers_list li .follower_action a,
 .popup_container.contact_popup 
 .contact_popup_left .contact_content .contact_content_item
@@ -1904,6 +1914,14 @@ h6{
   padding: 10px;
   transition: .3s;
   margin-left: 3px;
+}
+
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_action span{
+  display: block;
+  color: #7B7474;
+  margin-bottom: 2px;
 }
 
 .popup_container.contact_popup 
@@ -2208,11 +2226,40 @@ h6{
 
   .popup_container.follower_popup 
   .follower_popup_left .follower_content .follower_content_item
+  .followers_list li,
+  .popup_container.contact_popup 
+  .contact_popup_left .contact_content .contact_content_item
+  .contacts_list li{
+    flex-direction: column;
+  }
+
+  .popup_container.follower_popup 
+  .follower_popup_left .follower_content .follower_content_item
+  .followers_list li .follower_profile,
+  .popup_container.contact_popup 
+  .contact_popup_left .contact_content .contact_content_item
+  .contacts_list li .contact_profile{
+    width: 100%;
+  }
+
+  .popup_container.follower_popup 
+  .follower_popup_left .follower_content .follower_content_item
   .followers_list li .follower_action,
   .popup_container.contact_popup 
   .contact_popup_left .contact_content .contact_content_item
   .contacts_list li .contact_action {
-    margin-left: 60px;
+    padding-left: 60px;
     margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .popup_container.follower_popup 
+  .follower_popup_left .follower_content .follower_content_item
+  .followers_list li .follower_action a,
+  .popup_container.contact_popup 
+  .contact_popup_left .contact_content .contact_content_item
+  .contacts_list li .contact_action a{
+    margin-bottom: 5px;
   }
 }

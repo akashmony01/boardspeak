@@ -81,7 +81,7 @@ section.banner_desc{
 
 @media only screen and (min-width: 769px) {
   .gp_main .group_desc .group_desc_container .group_text h3.group_name {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 
@@ -94,7 +94,7 @@ section.banner_desc{
 }
 @media only screen and (min-width: 769px) {
   .gp_main .group_desc .group_desc_container .group_text p {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
   }
 }
 .gp_main .group_desc .group_desc_container .group_text p.group_metta {
