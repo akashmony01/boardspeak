@@ -1290,6 +1290,7 @@ ul li a.active{
 
 
 /* todos popup styles */
+/* ========================================================================== */
 .popup_container .popup_item .popup_closer{
   position: absolute;
   right: 0px;
@@ -1299,6 +1300,7 @@ ul li a.active{
   font-size: 20px;
   cursor: pointer;
   transition: .3s;
+  z-index: 99999;
 }
 
 .todos_not_popup .todos_not .popup_closer{
@@ -1408,6 +1410,7 @@ ul li a.active{
 }
 
 /* create group popup */
+/* ===================================================================== */
 .create_group_popup_item .create_header_bar{
   padding: 25px 50px;
   background-color: #E5E5E5;
@@ -1495,7 +1498,7 @@ ul li a.active{
 
 
 /* unfollow popup */
-/* ============================================ */
+/* ================================================================ */
 .popup_container.unfollow_popup .popup_body{
   margin-bottom: 25px;
   text-align: center;
@@ -1534,7 +1537,7 @@ ul li a.active{
 }
 
 /* problem popup & notification popup*/
-/* ==================================== */
+/* =============================================================== */
 .popup_container.problem_popup .popup_header,
 .popup_container.not_popup .popup_header{
   background-color: #15AFE8;
@@ -1637,7 +1640,396 @@ h6{
 
 
 
+/* follower popup & contact popup*/
+/* =============================================================== */
+.popup_container.follower_popup .follower_popup_item,
+.popup_container.contact_popup .contact_popup_item{
+  max-width: 80%;
+  padding-top: 50px;
 
+  /* layout */
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left,
+.popup_container.contact_popup 
+.contact_popup_left{
+  width: 55%;
+  margin-bottom: 50px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right,
+.popup_container.contact_popup 
+.contact_popup_right{
+  width: 40%;
+}
+
+
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_popup_header,
+.popup_container.contact_popup 
+.contact_popup_left .contact_popup_header{
+  padding: 15px 10px;
+  background-color: #15AFE8;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_popup_nav,
+.popup_container.contact_popup 
+.contact_popup_left .contact_popup_nav{
+  list-style-type: none;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_popup_nav li,
+.popup_container.contact_popup 
+.contact_popup_left .contact_popup_nav li{
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  color: #333;
+  transition: .3s;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_popup_nav li:hover,
+.popup_container.contact_popup 
+.contact_popup_left .contact_popup_nav li:hover{
+  color: #15AFE8;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_popup_nav li.active,
+.popup_container.contact_popup 
+.contact_popup_left .contact_popup_nav li.active{
+  color: #15AFE8;
+  border-color: #15AFE8;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter{
+  margin-top: 25px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_search,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_search{
+  position: relative;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_search input,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_search input{
+  padding-right: 100px;
+  font-family: sans-serif;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_search button,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_search button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #15AFE8;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  width: 90px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_filter_list,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_filter_list{
+  list-style-type: none;
+  margin: 25px 0;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_filter_list li,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_filter_list li{
+  display: inline-block;
+  padding: 5px 0;
+  padding-right: 15px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_filter_list li a,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_filter_list li a{
+  font-size: 16px;
+  color: #7B7474;
+  font-family: sans-serif;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_filter_list li.active a,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_filter_list li.active a{
+  color: #15AFE8;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_filter .follower_filter_list li:hover a,
+.popup_container.contact_popup 
+.contact_popup_left .contact_filter .contact_filter_list li:hover a{
+  color: #15AFE8
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item{
+  display: none;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item.active,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item.active{
+  display: block;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item h5,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item h5{
+  font-family: sans-serif;
+  color: #7B7474;
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, .05);
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li{
+  padding: 15px 0;
+
+  /* layout */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_profile,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_profile{
+  display: flex;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_profile img,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_profile img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_profile .follower_info h6,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_profile .contact_info h6{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 0px;  
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_profile .follower_info p,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_profile .contact_info p{
+  font-family: sans-serif;
+  color: #7B7474;
+  font-size: 14px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_action a,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_action a{
+  background-color: #15AFE8;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_action a.btn:last-child{
+  background-color: silver;
+  padding: 10px;
+  transition: .3s;
+  margin-left: 3px;
+}
+
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_action a.btn:last-child:hover{
+  background-color: #F42C4C;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_action .dropdown-menu a,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_action .dropdown-menu a{
+  background-color: transparent;
+  color: #7B7474;
+  transition: .3s;
+}
+
+.popup_container.follower_popup 
+.follower_popup_left .follower_content .follower_content_item
+.followers_list li .follower_action .dropdown-menu a:hover,
+.popup_container.contact_popup 
+.contact_popup_left .contact_content .contact_content_item
+.contacts_list li .contact_action .dropdown-menu a:hover{
+  color: #15AFE8;
+}
+
+/* right side bar styles */
+/* ---------------------- */
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_img img,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_img img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list h5,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list h5{
+  font-size: 16px;
+  color: #7B7474;
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, .05);
+  margin-bottom: 20px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list li,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list li{
+  margin-bottom: 15px;
+  padding-right: 25px;
+  display: flex;
+  position: relative;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list li img,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list li img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list li
+.follower_side_text h6,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list li
+.contact_side_text h6{
+  margin-bottom: 0;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list li
+.follower_side_text p,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list li
+.contact_side_text p{
+  color: #7B7474;
+  font-size: 14px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list li a,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list li a{
+  position: absolute;
+  right: 10px;
+  top: 2.5px;
+  color: #7B7474;
+  transition: .3s;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list li a i,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list li a i{
+  font-size: 25px;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .follower_side_list li a:hover,
+.popup_container.contact_popup 
+.contact_popup_right .contact_side_list li a i{
+  color: #15AFE8;
+}
+
+.popup_container.follower_popup 
+.follower_popup_right .see_more,
+.popup_container.contact_popup 
+.contact_popup_right .see_more{
+  font-family: sans-serif;
+  color: #7B7474;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
 
 
 
@@ -1771,5 +2163,56 @@ h6{
 
   .todos_not_popup .todos_not ul li h4.todos_name {
     margin-bottom: 5px;
+  }
+}
+
+
+
+/* follower popup responsive */
+@media only screen and (max-width: 991px) {
+  .popup_container.follower_popup .follower_popup_item,
+  .popup_container.contact_popup .contact_popup_item{
+    /* layout */
+    flex-direction: column;
+  }
+
+  .popup_container.follower_popup 
+  .follower_popup_left,
+  .popup_container.contact_popup 
+  .contact_popup_left{
+    width: 100%
+  }
+
+  .popup_container.follower_popup 
+  .follower_popup_right,
+  .popup_container.contact_popup 
+  .contact_popup_right{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .popup_container.follower_popup .follower_popup_item,
+  .popup_container.contact_popup .contact_popup_item{
+    padding-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .popup_container.follower_popup .follower_popup_item,
+  .popup_container.contact_popup .contact_popup_item{
+    padding-top: 25px;
+    max-width: 95%;
+  }
+
+  .popup_container.follower_popup 
+  .follower_popup_left .follower_content .follower_content_item
+  .followers_list li .follower_action,
+  .popup_container.contact_popup 
+  .contact_popup_left .contact_content .contact_content_item
+  .contacts_list li .contact_action {
+    margin-left: 60px;
+    margin-bottom: 15px;
   }
 }

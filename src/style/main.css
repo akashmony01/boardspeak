@@ -125,6 +125,33 @@
     visibility: hidden;
   }
 }
+
+
+/* animation for boostrap dropdown */
+/* ======================================== */
+.dropdown-menu {
+  animation: bootDrop;
+  animation-fill-mode: forwards;
+  
+  /* animation durstion in second
+  if you change this also shuld change in line 68*/
+  animation-duration: .3s;
+}
+
+/* the background animation */
+@keyframes bootDrop {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 5px;
+  }
+}
+
+
+
 /* board item style */
 /* =============================== */
 

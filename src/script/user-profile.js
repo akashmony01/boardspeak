@@ -399,6 +399,72 @@ $(document).ready(function(){
 });
 
 
+// follower popup script
+$(document).ready(function(){
+
+	$(".follower_popup_opener").click(function(){
+    var data = $(this).attr('follow_data');
+    
+    $(".follower_popup_nav > li").removeClass("active");
+    $(".follower_popup_nav > li[follow_data=" + data + "]").addClass("active");
+    
+    $(".follower_content_item").removeClass('active');
+    $("." + data).addClass('active');
+
+    // open popup
+	  $(".follower_popup").addClass('popped');
+	});
+  
+	// close srcrpt
+	$(".follower_popup_closer").click(function(){
+		$(".follower_popup").removeClass('popped');
+  });
+  
+
+  // script for follower and following
+  /* customs script for filtering NOTIFICATION tabs */
+  $(".follower_popup_nav > li").click(function(){
+    var data = $(this).attr('follow_data');
+    
+    $(".follower_popup_nav > li").removeClass("active");
+    $(this).addClass("active");
+    
+    $(".follower_content_item").removeClass('active');
+    $("." + data).addClass('active');
+  });
+});
+
+
+// contacts popup script
+$(document).ready(function(){
+
+	$(".contact_popup_opener").click(function(){
+    // open popup
+	  $(".contact_popup").addClass('popped');
+	});
+  
+	// close srcrpt
+	$(".contact_popup_closer").click(function(){
+		$(".contact_popup").removeClass('popped');
+  });
+  
+
+  // script for contact and following
+  /* customs script for filtering NOTIFICATION tabs */
+  $(".contact_popup_nav > li").click(function(){
+    var data = $(this).attr('contact_data');
+    
+    $(".contact_popup_nav > li").removeClass("active");
+    $(this).addClass("active");
+    
+    $(".contact_content_item").removeClass('active');
+    $("." + data).addClass('active');
+  });
+
+
+});
+
+
 
 // sticky search bar script
 $(document).ready(function(){
