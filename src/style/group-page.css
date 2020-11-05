@@ -81,7 +81,7 @@ section.banner_desc{
 
 @media only screen and (min-width: 769px) {
   .gp_main .group_desc .group_desc_container .group_text h3.group_name {
-    font-size: 3vw;
+    font-size: max(3vw, 25px);
   }
 }
 
@@ -90,11 +90,11 @@ section.banner_desc{
   font-family: montserrat-regular;
   margin: 0;
   margin-bottom: 2.5px;
-  line-height: 20px;
+  line-height: 1.15;
 }
 @media only screen and (min-width: 769px) {
   .gp_main .group_desc .group_desc_container .group_text p {
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 16px);
   }
 }
 .gp_main .group_desc .group_desc_container .group_text p.group_metta {
@@ -112,16 +112,12 @@ section.banner_desc{
 
 .gp_main .group_desc .group_desc_container .group_text p.group_metta span {
   display: inline-block;
-  font-size: 16px;
   color: #7B7474;
   font-weight: 600;
 }
 
 .gp_main .group_desc .group_desc_container .group_text p.group_metta span.group_badge {
-  line-height: 25px;
-  padding: 0 10px;
-  height: 25px;
-  font-size: 14px;
+  padding: 2.5px 10px;
   background-color: #8FB04E;
   text-transform: capitalize;
   border-radius: 15px;
@@ -177,7 +173,11 @@ section.banner_desc{
   color: #F42C4C;
 }
 
-
+@media only screen and (min-width: 769px) {
+  .gp_main .group_desc .group_desc_container .group_btn button {
+    font-size: max(1.5vw, 16px);
+  }
+}
 
 
 
@@ -506,7 +506,7 @@ section.banner_desc{
   border-right: 15px solid #fff;
   right: -20px;
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .secondery_item ul.secondery_dropdown::after {
     left: auto;
     right: -45px;
